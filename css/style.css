@@ -299,34 +299,44 @@ background-size: cover;
   background-image: url(../img/Search-darkorange.png);
 }
 
+
+
 /* SECTION-SLIDER  */
 
 .section-slider {
   margin-bottom: 104px;
-  box-shadow: 0px 45px 40px -40px rgba(0, 0, 0, 0.1);
+  /* padding-left: 80px;
+  padding-right: 80px; */
 }
 
 .section-slider__container {
   min-height: 820px;
-  
-  
-  background-size: cover;
+  position: relative;
+} 
+
+ .swiper-container {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
   
 }
 
-.section-slider__content {
+.swiper-slide {
+  background-size: cover;
+  background-position: right;
+  background-repeat: no-repeat;
+}
+
+ .section-slider__content {
   display: flex;
+  position: relative;
   flex-direction: column;
-  background: url(../img/fakro-group-6.jpg) right no-repeat;
-  background-size: cover;
-  padding: 65px 48px 0 81px;
-  min-height: 820px;
+  padding: 30px;
   align-items: flex-end;
-}
-
-.section-slider__img {
-  height: 100%;
-}
+  z-index: 5;
+} 
 
 .section-slider__heading {
   margin-bottom: 21px;
