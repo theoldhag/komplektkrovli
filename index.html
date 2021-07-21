@@ -8,11 +8,11 @@
   <meta name="description"
     content="Работы по монтажу и реконструкции кровли. Монтаж мансарднфх окон, элементов безопасности кровли">
   <link rel="stylesheet" href="/css/normalize.css">
-  
+
 <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"/>
 <link rel="stylesheet" href="/css/style.css">
 <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
-  
+
 </head>
 
 <body>
@@ -41,11 +41,10 @@
         <ul class="header-nav__list">
           <li class="header-nav__item"><a href="/krovlya.html" class="header-nav__link">Кровля</a></li>
           <li class="header-nav__item"><a href="/okna.html" class="header-nav__link">Мансардные окна</a></li>
-          <li class="header-nav__item"><a href="/snegozaderzhateli.html" class="header-nav__link">Снегозадержатели</a>
-          </li>
+          <li class="header-nav__item"><a href="/snegozaderzhateli.html" class="header-nav__link">Снегозадержатели</a></li>
           <li class="header-nav__item"><a href="/lestnici.html" class="header-nav__link">Лестницы</a></li>
           <li class="header-nav__item"><a href="/mostiki.html" class="header-nav__link">Мостики</a></li>
-          <li class="header-nav__item"><a href="/montazh.html" class="header-nav__link">Монтаж</a></li>
+          <!-- <li class="header-nav__item"><a href="/montazh.html" class="header-nav__link">Монтаж</a></li> -->
         </ul>
       </nav>
     </div>
@@ -59,15 +58,15 @@
             <div class="swiper-slide" style="background-image: url(/img/fakro-group-6.jpg);">
               <div class="section-slider__content">
                 <h1 class="section-slider__heading">Монтаж мансардных окон в любые виды кровли</h1>
-                
+
                 <form class="section-slider__form" action="https://jsonplaceholder.typicode.com/posts" method="POST">
                   <button class="section-slider__button button">Заказать расчёт</button>
                 </form>
               </div></div>
             <div class="swiper-slide" style="background-image: url(/img/slider1920-2.jpg);">
               <div class="section-slider__content">
-                <h1 class="section-slider__heading">Монтаж снегозадержателей</h1>
-                
+                <h1 class="section-slider__heading">Монтаж элементов безопасности кровли</h1>
+
                 <form class="section-slider__form" action="https://jsonplaceholder.typicode.com/posts" method="POST">
                   <button class="section-slider__button button">Заказать расчёт</button>
                 </form>
@@ -75,26 +74,35 @@
             <div class="swiper-slide" style="background-image: url(/img/slider1920-3.jpg);"></div>
           </div>
           <div class="swiper-pagination"></div>
-         
+
         </div>
-        
+
       </div>
     </section>
-   
+
     <section class="section-work">
       <div class="section-work__container container">
         <h2 class="section-work__heading"> Как мы работаем</h2>
         <ul class="section-work__list">
-          <li class="section-work__item"><a class="section-work__download">1. Звонок или заявка</a></li>
-          <li class="section-work__item"><a class="section-work__download">2. Выезд специалиста</a></li>
-          <li class="section-work__item"><a class="section-work__download">3. Расчет стоимости</a></li>
-          <li class="section-work__item"><a class="section-work__download">4. Подписание договора</a></li>
-          <li class="section-work__item"><a class="section-work__download">5. Выполнение работ</a></li>
-
+          <li class="section-work__item"><button class="tabs-btn tabs-btn-active" data-path="one">1. Звонок или заявка</button></li>
+          <li class="section-work__item"><button class="tabs-btn btn-reset" data-path="two">2. Выезд специалиста</button></li>
+          <li class="section-work__item"><button class="tabs-btn btn-reset" data-path="three">3. Расчет стоимости</button></li>
+          <li class="section-work__item"><button class="tabs-btn btn-reset" data-path="four">4. Подписание договора</button></li>
+          <li class="section-work__item"><button class="tabs-btn btn-reset" data-path="five">5. Выполнение работ</button></li>
         </ul>
-        <div class="section-work__content">
+        <div class="section-work__content tab-content tab-content-active" data-target="one">
           <div class="section-work__discription">
-            <h3 class="section-work__content-heading">Проводим конcультацию</h3>
+            <h3 class="section-work__content-heading">Звонок или заявка</h3>
+            <p class="section-work__content-info">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo rem eos ut provident veritatis voluptatibus et, quidem voluptate. Eligendi nostrum earum alias asperiores similique iste hic nobis provident debitis laboriosam. </p>
+
+          </div>
+          <picture class="section-work__img">
+                      <img src="/img/zvonok2.jpg" alt="Как мы работаем">
+          </picture>
+        </div>
+        <div class="section-work__content tab-content" data-target="two">
+          <div class="section-work__discription">
+            <h3 class="section-work__content-heading">Выезд специалиста</h3>
             <p class="section-work__content-info">Влечет за собой процесс внедрения и модернизации приоритизации
               разума над эмоциями. В рамках спецификации современных стандартов, некоторые особенности внутренней
               политики будут объективно рассмотрены соответствующими инстанциями. А также представители современных
@@ -103,14 +111,53 @@
               исследования подвергнуты целой серии независимых исследований. Кстати, &nbsp;стремящиеся вытеснить
               традиционное производство, нанотехнологии освещают чрезвычайно интересные особенности картины в целом,
               однако конкретные выводы, разумеется, призваны к ответу.</p>
-            <button class="button section-work__button">Подробнее</button>
+
           </div>
           <picture class="section-work__img">
-            <!-- <source srcset="/img/section_work_320.jpg" media="(max-width: 568px)">
-            <source srcset="/img/work_img_768.jpg" media="(max-width: 920px)">
-            <source srcset="/img/Rectangle18-1024.png" media="(max-width: 1280px)">
-            <source srcset="/img/Rectangle18-2.jpg" media="(max-width: 1600px)"> -->
-            <img src="/img/zvonok2.jpg" alt="Как мы работаем">
+                      <img src="/img/viezd.jpg" alt="Как мы работаем">
+          </picture>
+        </div>
+        <div class="section-work__content tab-content" data-target="three">
+          <div class="section-work__discription">
+            <h3 class="section-work__content-heading">Расчет стоимости</h3>
+            <p class="section-work__content-info"> А также представители современных
+              социальных резервов, инициированные исключительно синтетически, ограничены исключительно образом
+              мышления. Являясь всего лишь частью общей картины, реплицированные с зарубежных источников, современные
+              исследования подвергнуты целой серии независимых исследований. Кстати, &nbsp;стремящиеся вытеснить
+              традиционное производство, нанотехнологии освещают чрезвычайно интересные особенности картины в целом,
+              однако конкретные выводы, разумеется, призваны к ответу.</p>
+
+          </div>
+          <picture class="section-work__img">
+                      <img src="/img/tab3.jpg" alt="Как мы работаем">
+          </picture>
+        </div>
+        <div class="section-work__content tab-content" data-target="four">
+          <div class="section-work__discription">
+            <h3 class="section-work__content-heading">Подписание договора</h3>
+            <p class="section-work__content-info">Составление договора с учето всех пожеланий клиента., ограничены исключительно образом
+              мышления. Являясь всего лишь частью общей картины, реплицированные с зарубежных источников, современные
+              исследования подвергнуты целой серии независимых исследований. Кстати, &nbsp;стремящиеся вытеснить
+              традиционное производство, нанотехнологии освещают чрезвычайно интересные особенности картины в целом,
+              однако конкретные выводы, разумеется, призваны к ответу.</p>
+
+          </div>
+          <picture class="section-work__img">
+                      <img src="/img/tab4.jpg" alt="Как мы работаем">
+          </picture>
+        </div>
+        <div class="section-work__content tab-content" data-target="five">
+          <div class="section-work__discription">
+            <h3 class="section-work__content-heading">Монтаж</h3>
+            <p class="section-work__content-info">Составление договора с учето всех пожеланий клиента., ограничены исключительно образом
+              мышления. Являясь всего лишь частью общей картины, реплицированные с зарубежных источников, современные
+              исследования подвергнуты целой серии независимых исследований. Кстати, &nbsp;стремящиеся вытеснить
+              традиционное производство, нанотехнологии освещают чрезвычайно интересные особенности картины в целом,
+              однако конкретные выводы, разумеется, призваны к ответу.</p>
+
+          </div>
+          <picture class="section-work__img">
+                      <img src="/img/tab5.jpg" alt="Как мы работаем">
           </picture>
         </div>
       </div>
@@ -263,6 +310,9 @@
       },
     });
   </script>
+  <script src="tabs.js"></script>
+  <script src="tabs2.js"></script>
+
 </body>
 
 </html>
