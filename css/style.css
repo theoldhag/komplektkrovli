@@ -54,6 +54,9 @@
   --grey: #666666;
   --dark-grey: #333333;
   --light-grey: #999999;
+  --superlight-grey: #9999993a;
+  --light-green: rgb(153, 190, 110);
+
 }
 
 body {
@@ -193,8 +196,9 @@ background-size: cover;
 }
 
 .header__logo {
-  margin-top: 12px;
-  margin-left: 25px;
+  /* margin-top: 12px;
+  margin-left: 25px; */
+  height: 100%;
 }
 .header-action {
   font-size: 18px;
@@ -294,7 +298,7 @@ background-size: cover;
 /* SECTION-SLIDER  */
 
 .section-slider {
-  margin-bottom: 104px;
+  margin-bottom: 90px;
 }
 
 .section-slider__container {
@@ -416,20 +420,24 @@ background-size: cover;
 /* SECTION-WORK  */
 
 .section-work {
-  margin-bottom: 85px;
+  margin-bottom: 90px;
   box-shadow: 0px 45px 40px -40px rgba(0, 0, 0, 0.1);
 
 }
 
+.section-work__container {
+  padding-bottom: 50px;
+}
+
 .section-work__heading {
-  margin: 0 0 60px 0px;
+  margin: 0 0 50px 0px;
   text-align: center;
 }
 
 .section-work__list {
   display: flex;
-  margin: 0 0 30px 0px;
- justify-content: space-between;
+  margin: 0 0 5px 0px;
+ justify-content: space-around;
 }
 
 .section-work__item {
@@ -443,9 +451,6 @@ background-size: cover;
   transition: color .3s ease;
   text-align: center;
   height: 80px;
-
-
-
 }
 
 .section-work__item:visited, .section-work__item:hover {
@@ -458,9 +463,13 @@ background-size: cover;
 
 .section-work__content {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
-  padding: 30px;
+  padding-left: 50px;
+  border: 3px dashed var(--superlight-grey);
+  /* border-radius: 20px; */
+  background: url(/img/derevo.jpg), rgba(253, 253, 253, 0.7) ;  
+  background-blend-mode: color;  
 }
 
 .tab-content {
@@ -489,7 +498,7 @@ background-size: cover;
   margin: 0 20px 0 0px;
   padding: 20px 25px 15px 25px;
   border-radius: 2px;
-  font-weight: 700;
+  font-weight: 500;
   background-color: #9999993a;
   color: var(--dark-grey);
 transition: box-shadow .3s ease, backgroound-color .3s ease, color .3s ease;
@@ -497,8 +506,8 @@ transition: box-shadow .3s ease, backgroound-color .3s ease, color .3s ease;
 
 .tabs-btn:hover {
   box-shadow: 0 2px 4px var(--light-grey);
-  /* background-color: var(--orange);
-  color: white; */
+  /* background-color: var(--orange);*/
+  color: white; 
 }
 
 .tabs-btn:active {
@@ -509,7 +518,7 @@ transition: box-shadow .3s ease, backgroound-color .3s ease, color .3s ease;
 
 .tabs-btn:focus {
   box-shadow: 0 2px 4px var(--light-grey);
-  background-color: var(--orange);
+  background-color: rgb(153, 190, 110);
   outline: none;
   color: white;
 }
@@ -556,7 +565,8 @@ transition: box-shadow .3s ease, backgroound-color .3s ease, color .3s ease;
 
 .section-work__img {
   flex: 1 0 50%;
-  margin: 5px -1px  2px 15px;
+  box-shadow: inset 0 0 35px 35px rgba(236, 231, 231, 0.8);
+  /* margin: 5px -1px  2px 15px; */
 }
 
 /*SECTION-GALLERY*/
@@ -568,7 +578,7 @@ transition: box-shadow .3s ease, backgroound-color .3s ease, color .3s ease;
 }
 
 .section-gallery__heading {
-  margin: 0 0 60px 0;
+  margin: 0 0 50px 0;
   text-align: center;
 }
 
@@ -668,7 +678,8 @@ z-index: -1;
 
   padding: 49px 75px 65px 74px;
   color: white;
-  background-color: #333333;
+  /* background-color: #333333; */
+  background: linear-gradient(to bottom, #515151 20%, #2a2a2a 80%);
 
 }
 
@@ -864,64 +875,77 @@ z-index: -1;
 
 
 
+/* Разработать единую разметку с классами для всех страниц меню */
 
 
+/* SECTION category */
 
-/* SECTION HOTELS */
-
-.section-hotels {
-  margin-bottom: 30px;
+.section-category {
+  margin-bottom: 90px;
   margin-top: 50px;
 }
 
-.section-hotels__heading {
-  margin-bottom:50px;
+.section-category__heading {
+  margin-bottom:30px;
+  
+}
+.section-category__discription {
+  margin-bottom: 20px;
+  width: 80%;
 }
 
-.section-hotels__item {
+.section-category__item {
   margin-bottom: 20px;
-  border-radius: 12px;
+  border-radius: 3px;
   background-color: white;
   border: 1px solid rgb(219, 219, 219);
   transition: box-shadow .3s ease;
   overflow: hidden;
 }
 
-.section-hotels__item:hover {
+.section-category__item:hover {
   box-shadow: 0 2px 4px var(--light-grey);
 }
 
-.section-hotels__col {
+.section-category__col {
   display: flex;
 }
 
-.hotels-item__image {
+.category-item__image {
   width: 100%;
+  max-height: 350px;
+  object-fit: cover;
 }
 
-.hotels-item__info {
-  margin: 30px 30px 30px 30px;
+.category-item__info {
+  padding: 30px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+ 
+
 }
 
-.hotels-item__price {
+.category-item__price {
   margin-right: 30px;
   color: var(--light-grey);
 }
 
-.hotels-item__place {
-  margin-bottom: 30px;
+.category-item__place {
+  /* margin-bottom: 30px; */
   color: var(--light-grey);
   font-weight: 400;
 }
 
-.hotels-item__heading {
-  margin-top: 10px;
-  margin-bottom: 10px;
+.category-item__heading {
+  margin-top: 0px;
+  margin-bottom: 0px;
   font-weight: 450;
   color: var(--dark-grey);
 }
 
-.hotels-price {
+.category-price {
   margin-left: 5px;
   margin-right: 5px;
   font-size: 22px;
@@ -930,8 +954,8 @@ z-index: -1;
   color: var(--dark-grey);
 }
 
-.hotels-item__link {
-  margin: 0 20px 0 0px;
+.category-item__link {
+  margin: 0px;
   padding: 20px 25px 15px 25px;
   border-radius: 2px;
   font-weight: 700;
@@ -940,13 +964,13 @@ z-index: -1;
 transition: box-shadow .3s ease, backgroound-color .3s ease, color .3s ease;
 }
 
-.hotels-item__link:hover {
+.category-item__link:hover {
   color: white;
   background-color: var(--orange);
   text-decoration: none;
 }
 
-.hotels-item__block {
+.category-item__block {
   position: relative;
   width: 100%;
   margin-bottom: 20px;
@@ -959,11 +983,11 @@ transition: box-shadow .3s ease, backgroound-color .3s ease, color .3s ease;
   transition: box-shadow .3s ease;
 }
 
-.hotels-item__block:hover {
+.category-item__block:hover {
   box-shadow: 0 2px 8px var(--dark-grey);
 }
 
-.hotels-block__link {
+.category-block__link {
   display: inline-block;
   margin-top: 370px;
   padding-right: 15px;
@@ -976,7 +1000,7 @@ transition: box-shadow .3s ease, backgroound-color .3s ease, color .3s ease;
   background-position: right;
 }
 
-.hotels-block__link::before {
+.category-block__link::before {
   content: "";
   position: absolute;
   display: block;
@@ -985,6 +1009,28 @@ transition: box-shadow .3s ease, backgroound-color .3s ease, color .3s ease;
   width: 100%;
   height: 100%;
   background-color: transparent;
+}
+
+.price-download {
+  color: var(--orange);
+  margin-bottom: 30px;
+  /* text-align: center; */
+  /* font-size: 20px; */
+  font-weight: 600;
+  border: 3px dashed var(--superlight-grey);
+  background: url(/img/derevo.jpg), rgba(253, 253, 253, 0.7) ;  
+  background-blend-mode: color;  
+  padding: 15px;
+ 
+  
+}
+
+.price-download-link {
+  color: var(--orange);
+  margin: 0 30px;
+  text-decoration: underline;
+  /* font-size: 30px; */
+  
 }
 
 
