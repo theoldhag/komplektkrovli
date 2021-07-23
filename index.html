@@ -7,12 +7,12 @@
   <title>Комплект Кровли - комплексные работы по монтажу и реконструкции кровли.</title>
   <meta name="description"
     content="Работы по монтажу и реконструкции кровли. Монтаж мансарднфх окон, элементов безопасности кровли">
-    <link rel="icon" href="/img/favicon.png" type="image/x-icon">
+  <link rel="icon" href="/img/favicon.png" type="image/x-icon">
   <link rel="stylesheet" href="/css/normalize.css">
 
-<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"/>
-<link rel="stylesheet" href="/css/style.css">
-<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="/css/style.css">
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
 
 </head>
 
@@ -21,11 +21,11 @@
     <div class="header__container container">
       <a href="/index.html">
         <!-- <picture class="header__logo">           -->
-          <img  class="header__logo" src="/img/14.png" alt="Логотип">
+        <img class="header__logo" src="/img/14.png" alt="Логотип">
         <!-- </picture> -->
       </a>
       <div class="header-center">
-        <span class="header-action">Только до 1 августа скидка на мансардные окна FAKRO 20%!</span>
+        <div class="header-action typewriter"><h4>Только до 1 августа скидка на мансардные окна FAKRO 20%!</h4></div>
         <button class="burger"></button>
       </div>
       <div class="header-right">
@@ -41,7 +41,8 @@
         <ul class="header-nav__list">
           <li class="header-nav__item"><a href="/krovlya.html" class="header-nav__link">Кровля</a></li>
           <li class="header-nav__item"><a href="/okna.html" class="header-nav__link">Мансардные окна</a></li>
-          <li class="header-nav__item"><a href="/snegozaderzhateli.html" class="header-nav__link">Снегозадержатели</a></li>
+          <li class="header-nav__item"><a href="/snegozaderzhateli.html" class="header-nav__link">Снегозадержатели</a>
+          </li>
           <li class="header-nav__item"><a href="/lestnici.html" class="header-nav__link">Лестницы</a></li>
           <li class="header-nav__item"><a href="/mostiki.html" class="header-nav__link">Мостики</a></li>
           <!-- <li class="header-nav__item"><a href="/montazh.html" class="header-nav__link">Монтаж</a></li> -->
@@ -50,7 +51,7 @@
     </div>
   </div>
 
-  <main>
+  <main class="container">
     <section class="section-slider">
       <div class="section-slider__container container">
         <div class="swiper-container">
@@ -62,15 +63,17 @@
                 <form class="section-slider__form" action="https://jsonplaceholder.typicode.com/posts" method="POST">
                   <button class="section-slider__button button">Заказать расчёт</button>
                 </form>
-              </div></div>
+              </div>
+            </div>
             <div class="swiper-slide" style="background-image: url(/img/slider1920-2.jpg);">
-              <div class="section-slider__content2">
-                <h1 class="section-slider__heading2">Монтаж элементов безопасности кровли</h1>
+              <div class="section-slider__content">
+                <h1 class="section-slider__heading">Монтаж элементов безопасности кровли</h1>
 
                 <form class="section-slider__form" action="https://jsonplaceholder.typicode.com/posts" method="POST">
                   <button class="section-slider__button button">Заказать расчёт</button>
                 </form>
-              </div></div>
+              </div>
+            </div>
             <div class="swiper-slide" style="background-image: url(/img/slider1920-3.jpg);"></div>
           </div>
           <div class="swiper-pagination"></div>
@@ -81,24 +84,38 @@
     </section>
 
     <section class="section-work">
-      <div class="section-work__container container">
+      <div class="section-work__container">
         <h2 class="section-work__heading"> Как мы работаем</h2>
         <ul class="section-work__list">
-          <li class="section-work__item"><button class="tabs-btn tabs-btn-active" data-path="one">1. Звонок или заявка</button></li>
-          <li class="section-work__item"><button class="tabs-btn btn-reset" data-path="two">2. Выезд специалиста</button></li>
-          <li class="section-work__item"><button class="tabs-btn btn-reset" data-path="three">3. Расчет стоимости</button></li>
-          <li class="section-work__item"><button class="tabs-btn btn-reset" data-path="four">4. Подписание договора</button></li>
-          <li class="section-work__item"><button class="tabs-btn btn-reset" data-path="five">5. Выполнение работ</button></li>
+          <li class="section-work__item"><button class="tabs-btn tabs-btn-active" data-path="one">1. Звонок или
+              заявка</button></li>
+          <li class="section-work__item"><button class="tabs-btn btn-reset" data-path="two">2. Выезд
+              специалиста</button></li>
+          <li class="section-work__item"><button class="tabs-btn btn-reset" data-path="three">3. Расчет
+              стоимости</button></li>
+          <li class="section-work__item"><button class="tabs-btn btn-reset" data-path="four">4. Подписание
+              договора</button></li>
+          <li class="section-work__item"><button class="tabs-btn btn-reset" data-path="five">5. Выполнение
+              работ</button></li>
         </ul>
         <div class="section-work__content tab-content tab-content-active" data-target="one">
           <div class="section-work__discription">
             <h3 class="section-work__content-heading">Звонок или заявка</h3>
-            <p class="section-work__content-info">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo rem eos ut provident veritatis voluptatibus et, quidem voluptate. Eligendi nostrum earum alias asperiores similique iste hic nobis provident debitis laboriosam. </p>
+            <p class="section-work__content-info">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo rem eos
+              ut provident veritatis voluptatibus et, quidem voluptate. Eligendi nostrum earum alias asperiores
+              similique iste hic nobis provident debitis laboriosam. </p>
+            <p class="section-work__content-info">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo rem eos
+              ut provident veritatis voluptatibus et, quidem voluptate. Eligendi nostrum earum alias asperiores
+              similique iste hic nobis provident debitis laboriosam. </p>
+            <p class="section-work__content-info">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo rem eos
+              ut provident veritatis voluptatibus et, quidem voluptate. Eligendi nostrum earum alias asperiores
+              similique iste hic nobis provident debitis laboriosam. </p>
+            
 
           </div>
-          <!-- <div class="section-work__img"> -->
-                      <img src="/img/zvonok2.jpg" class="section-work__img" alt="Как мы работаем">
-          <!-- </picture> -->
+          <div class="section-work__img-container">
+            <!-- <img src="/img/zvonok2.jpg" class="section-work__img" alt="Как мы работаем"> -->
+          </div>
         </div>
         <div class="section-work__content tab-content" data-target="two">
           <div class="section-work__discription">
@@ -114,7 +131,7 @@
 
           </div>
           <!-- <picture class="section-work__img"> -->
-                      <img src="/img/viezd.jpg" class="section-work__img" alt="Как мы работаем">
+          <img src="/img/viezd.jpg" class="section-work__img" alt="Как мы работаем">
           <!-- </picture> -->
         </div>
         <div class="section-work__content tab-content" data-target="three">
@@ -129,13 +146,14 @@
 
           </div>
           <!-- <picture class="section-work__img"> -->
-                      <img src="/img/tab3.jpg" class="section-work__img" alt="Как мы работаем">
+          <img src="/img/tab3.jpg" class="section-work__img" alt="Как мы работаем">
           <!-- </picture> -->
         </div>
         <div class="section-work__content tab-content" data-target="four">
           <div class="section-work__discription">
             <h3 class="section-work__content-heading">Подписание договора</h3>
-            <p class="section-work__content-info">Составление договора с учето всех пожеланий клиента., ограничены исключительно образом
+            <p class="section-work__content-info">Составление договора с учето всех пожеланий клиента., ограничены
+              исключительно образом
               мышления. Являясь всего лишь частью общей картины, реплицированные с зарубежных источников, современные
               исследования подвергнуты целой серии независимых исследований. Кстати, &nbsp;стремящиеся вытеснить
               традиционное производство, нанотехнологии освещают чрезвычайно интересные особенности картины в целом,
@@ -143,13 +161,14 @@
 
           </div>
           <!-- <picture class="section-work__img"> -->
-                      <img src="/img/tab4.jpg" class="section-work__img" alt="Как мы работаем">
+          <img src="/img/tab4.jpg" class="section-work__img" alt="Как мы работаем">
           <!-- </picture> -->
         </div>
         <div class="section-work__content tab-content" data-target="five">
           <div class="section-work__discription">
             <h3 class="section-work__content-heading">Монтаж</h3>
-            <p class="section-work__content-info">Составление договора с учето всех пожеланий клиента., ограничены исключительно образом
+            <p class="section-work__content-info">Составление договора с учето всех пожеланий клиента., ограничены
+              исключительно образом
               мышления. Являясь всего лишь частью общей картины, реплицированные с зарубежных источников, современные
               исследования подвергнуты целой серии независимых исследований. Кстати, &nbsp;стремящиеся вытеснить
               традиционное производство, нанотехнологии освещают чрезвычайно интересные особенности картины в целом,
@@ -157,14 +176,14 @@
 
           </div>
           <!-- <picture class="section-work__img"> -->
-                      <img src="/img/tab5.jpg" class="section-work__img" alt="Как мы работаем">
+          <img src="/img/tab5.jpg" class="section-work__img" alt="Как мы работаем">
           <!-- </picture> -->
         </div>
       </div>
     </section>
 
     <section class="section-gallery">
-      <div class="section-gallery__container container">
+      <div class="section-gallery__container">
         <h2 class="section-gallery__heading">Фотогаллерея наших работ</h2>
         <div class="gallery-content">
           <div class="gallery-img-before">
@@ -182,7 +201,7 @@
     </section>
 
     <section class="section-about">
-      <div class="section-about__container container">
+      <div class="section-about__container">
         <h2 class="section-about__heading"> О нас</h2>
         <div class="section-about__content">
           <p class="section-about__discription">Уже сложно представить крышу современного дома без такого атрибута,
@@ -234,7 +253,7 @@
         </nav>
         <div class="footer__social">
           <ul class="footer__social-list">
-            <li class="footer__social-item"><a class="footer__social-link footer__facebook " href="facebook.com"></a>            
+            <li class="footer__social-item"><a class="footer__social-link footer__facebook " href="facebook.com"></a>
             </li>
             <li class="footer__social-item"><a class="footer__social-link footer__vk" href="vk.com"></a></li>
             <li class="footer__social-item"><a class="footer__social-link footer__instagram" href="instagram.com"></a>
@@ -280,22 +299,7 @@
   </footer>
   <p class="dev">2021-2022. Developed by <a class="dev-link" href="www.theoldhag.ru">THE OLD HAG</a> company.
   </p>
-  <script>
-    var mySwiper = new Swiper('.swiper-container', {
-      loop: true,
-      autoplay: {
-        delay: 6000,
-        desableOnInteaction: false,
-        speed: 1000,
-
-      },
-      pagination: {
-        el: '.swiper-pagination',
-        type: 'bullets',
-        clickable: true,
-      },
-    });
-  </script>
+  <script src="slider.js"></script>
   <script src="tabs.js"></script>
   <script src="tabs2.js"></script>
 
