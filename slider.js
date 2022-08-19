@@ -1,5 +1,5 @@
 var mySwiper = new Swiper('.swiper-container', {
-    loop: true,
+    loop: false,
     autoplay: {
       delay: 6000,
       desableOnInteaction: false,
